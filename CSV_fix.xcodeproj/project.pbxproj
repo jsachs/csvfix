@@ -1,0 +1,208 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16DB610D14058F4F006F3953 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 16DB610C14058F4F006F3953 /* main.c */; };
+		16DB610F14058F4F006F3953 /* CSV_fix.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16DB610E14058F4F006F3953 /* CSV_fix.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		16DB610614058F4F006F3953 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				16DB610F14058F4F006F3953 /* CSV_fix.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		16DB610814058F4F006F3953 /* CSV_fix */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CSV_fix; sourceTree = BUILT_PRODUCTS_DIR; };
+		16DB610C14058F4F006F3953 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		16DB610E14058F4F006F3953 /* CSV_fix.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CSV_fix.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16DB610514058F4F006F3953 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16DB60FD14058F4F006F3953 = {
+			isa = PBXGroup;
+			children = (
+				16DB610B14058F4F006F3953 /* CSV_fix */,
+				16DB610914058F4F006F3953 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		16DB610914058F4F006F3953 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16DB610814058F4F006F3953 /* CSV_fix */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16DB610B14058F4F006F3953 /* CSV_fix */ = {
+			isa = PBXGroup;
+			children = (
+				16DB610C14058F4F006F3953 /* main.c */,
+				16DB610E14058F4F006F3953 /* CSV_fix.1 */,
+			);
+			path = CSV_fix;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16DB610714058F4F006F3953 /* CSV_fix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16DB611214058F4F006F3953 /* Build configuration list for PBXNativeTarget "CSV_fix" */;
+			buildPhases = (
+				16DB610414058F4F006F3953 /* Sources */,
+				16DB610514058F4F006F3953 /* Frameworks */,
+				16DB610614058F4F006F3953 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CSV_fix;
+			productName = CSV_fix;
+			productReference = 16DB610814058F4F006F3953 /* CSV_fix */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16DB60FF14058F4F006F3953 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "University of Chicago";
+			};
+			buildConfigurationList = 16DB610214058F4F006F3953 /* Build configuration list for PBXProject "CSV_fix" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 16DB60FD14058F4F006F3953;
+			productRefGroup = 16DB610914058F4F006F3953 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16DB610714058F4F006F3953 /* CSV_fix */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16DB610414058F4F006F3953 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16DB610D14058F4F006F3953 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		16DB611014058F4F006F3953 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		16DB611114058F4F006F3953 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		16DB611314058F4F006F3953 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		16DB611414058F4F006F3953 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16DB610214058F4F006F3953 /* Build configuration list for PBXProject "CSV_fix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16DB611014058F4F006F3953 /* Debug */,
+				16DB611114058F4F006F3953 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16DB611214058F4F006F3953 /* Build configuration list for PBXNativeTarget "CSV_fix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16DB611314058F4F006F3953 /* Debug */,
+				16DB611414058F4F006F3953 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16DB60FF14058F4F006F3953 /* Project object */;
+}
