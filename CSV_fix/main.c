@@ -7,12 +7,29 @@
 //
 
 #include <stdio.h>
+#include <stdlib.h>
+#include "parsing.h"
+#include <limits.h>
+#define BUFFER   8000
+#define MAXLINES 200000
 
-int main (int argc, const char * argv[])
+int main(int argc, char *argv[])
 {
-
-    // insert code here...
-    printf("Hello, World!\n");
+    FILE* fp;
+    fp = fopen(argv[1], "r");
+    if (fp == NULL) exit(0);
+    
+    char dm;
+    printf("Enter delimiter: ");
+    scanf("%c", &dm);
+    
+    analyzeBlock(fp, dm);
+    
+    // need to configure to analyze certain size chunks at a time.
+    
+    
+    fclose(fp);
+    
     return 0;
 }
 
