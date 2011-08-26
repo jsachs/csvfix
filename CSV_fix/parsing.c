@@ -1,10 +1,8 @@
-//
+//  Created by:
+//  Jacob Sachs
+//     8/24/11
 //  parsing.c
 //  CSV_fix
-//
-//  Created by Jacob Sachs on 8/25/11.
-//  Copyright 2011 University of Chicago. All rights reserved.
-//
 
 #include <stdio.h>
 #include "parsing.h"
@@ -61,7 +59,7 @@ void printMalformed(int array[], int norm)
 }
 
 
-void analyzeBlock(FILE* fp, char dm)
+void analyzeBlock(FILE* fp, char dm, int* first_time)
 {
     int delim_counts[MAXLINES] = {'\0'};
     int done_flag = 0;
@@ -73,13 +71,16 @@ void analyzeBlock(FILE* fp, char dm)
     do {
         delim_counts[k] = delimitersPerLine(fp, dm, &done_flag);
         k++;
-    } while (!done_flag);
+    } while (!done_flag && (k < (MAXLINES/2)));
     
     
     // Determine the most commonly occuring number of delimiters on each line.
     int the_norm = determineNorm(delim_counts);
-    printf("The normal number of delimiters is %i.\n", the_norm);
     
+    if (*first_time) {
+        printf("The normal number of delimiters is %i.\n", the_norm);
+        *first_time = 0;
+    }
     
     // Print the line numbers containing irregular data.
     printMalformed(delim_counts, the_norm);

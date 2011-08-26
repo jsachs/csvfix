@@ -1,10 +1,8 @@
-//
+//  Created by:
+//  Jacob Sachs
+//     8/24/11
 //  main.c
 //  CSV_fix
-//
-//  Created by Jacob Sachs on 8/24/11.
-//  Copyright 2011 University of Chicago. All rights reserved.
-//
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -15,19 +13,31 @@
 
 int main(int argc, char *argv[])
 {
+    
+    // Procedure for opening file into readable chunks.
     FILE* fp;
     fp = fopen(argv[1], "r");
     if (fp == NULL) exit(0);
     
+    
+    
+    // Procedure for choosing delimiter to use.
     char dm;
     printf("Enter delimiter: ");
     scanf("%c", &dm);
     
-    analyzeBlock(fp, dm);
-    
-    // need to configure to analyze certain size chunks at a time.
     
     
+    // Procedure for analyzing the file chunks.
+    // Will determine correct number of delimiters from the first chunk alone.
+    
+    int ft = 1;
+    
+    while (!feof(fp))
+        analyzeBlock(fp, dm, &ft);
+    
+ 
+    // Close files at conclusion of runtime.
     fclose(fp);
     
     return 0;
